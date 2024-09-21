@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://btm5j3qel0hx6"]
+
+[ext_resource type="Texture2D" uid="uid://ux6bhh14gm1c" path="res://Assests/snake_face.png" id="1_q4a3h"]
+[ext_resource type="Script" path="res://Scenes/snake_face.gd" id="2_tviry"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(377, 240)
+texture = ExtResource("1_q4a3h")
+script = ExtResource("2_tviry")
