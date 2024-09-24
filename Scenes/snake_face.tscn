@@ -1,9 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://btm5j3qel0hx6"]
+[gd_scene load_steps=4 format=3 uid="uid://btm5j3qel0hx6"]
 
 [ext_resource type="Texture2D" uid="uid://ux6bhh14gm1c" path="res://Assests/snake_face.png" id="1_q4a3h"]
 [ext_resource type="Script" path="res://Scenes/snake_face.gd" id="2_tviry"]
 
-[node name="Sprite2D" type="Sprite2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_uk7ad"]
+radius = 59.0339
+
+[node name="snake_face" type="Area2D"]
 position = Vector2(377, 240)
-texture = ExtResource("1_q4a3h")
 script = ExtResource("2_tviry")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, -11)
+shape = SubResource("CircleShape2D_uk7ad")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_q4a3h")
