@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_uwu31"]
 radius = 155.081
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" groups=["good_apple"]]
 position = Vector2(438, 306)
 scale = Vector2(0.2, 0.2)
 script = ExtResource("1_jjf0t")
