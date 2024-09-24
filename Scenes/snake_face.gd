@@ -16,6 +16,9 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
+	
+	wrap_snake_head()
+	
 	direction.x = Input.get_axis("move_left","move_right")
 	direction.y = Input.get_axis("move_up","move_down")
 	
@@ -28,4 +31,12 @@ func _process(delta: float) -> void:
 		
 	velocity += steering_velocity * steering_factor *delta
 	position += velocity * delta
+	
+	
+func wrap_snake_head() -> void:
+	var viewport_size := get_viewport_rect().size
+
+	position.x = wrapf(position.x, 0, viewport_size.x)
+	position.y = wrapf(position.y, 0, viewport_size.y)
+
 	
