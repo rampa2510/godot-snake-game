@@ -1,14 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bi2kawuhmj7wi"]
+[gd_scene load_steps=3 format=3 uid="uid://bi2kawuhmj7wi"]
 
 [ext_resource type="PackedScene" uid="uid://btm5j3qel0hx6" path="res://Scenes/snake_face.tscn" id="1_46qv1"]
 [ext_resource type="PackedScene" uid="uid://dx8vaqbuluuqj" path="res://Scenes/parallax_background.tscn" id="1_y7paa"]
-[ext_resource type="PackedScene" uid="uid://dbkkyi3ooke5b" path="res://Scenes/apple.tscn" id="3_m3vfw"]
 
 [node name="snake_level" type="Node2D"]
 
 [node name="Sprite2D" parent="." instance=ExtResource("1_46qv1")]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_y7paa")]
-
-[node name="Area2D" parent="." instance=ExtResource("3_m3vfw")]
-position = Vector2(730, 407)
